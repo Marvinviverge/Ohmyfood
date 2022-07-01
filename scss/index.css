@@ -72,8 +72,9 @@ header {
   width: 10px;
   height: 10px;
   text-align: center;
-  font-size: 9px;
+  font-size: 11px;
   box-sizing: content-box;
+  font-weight: bold;
 }
 .btn--functions {
   padding: 22px;
@@ -104,11 +105,12 @@ header {
 
 .restaurants--cards {
   border-radius: 15px;
-  box-shadow: 3px 7px 5px rgb(222, 222, 222);
+  box-shadow: 0px 0px 5px #494949;
   height: 300px;
   margin-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 .restaurants--cards--img {
   -o-object-fit: cover;
@@ -117,7 +119,6 @@ header {
   border-top-right-radius: 15px;
   width: 100%;
   height: 75%;
-  position: relative;
   z-index: 1;
 }
 .restaurants--cards--body--description {
@@ -126,31 +127,36 @@ header {
 .restaurants--cards--body {
   display: flex;
   justify-content: space-between;
-  margin-right: 20px;
+  position: relative;
 }
 .restaurants--cards--body .fa-regular {
   font-size: 25px;
-  margin-top: 15px;
+  margin-top: 20px;
   position: absolute;
-  right: 10%;
+  right: 4%;
+  background-color: transparent;
+  border: none;
 }
 .restaurants--cards--body .fa-solid {
   font-size: 25px;
-  margin-top: 15px;
+  margin-top: 20px;
   position: absolute;
-  right: 10%;
+  right: 4%;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  transition: 200ms;
 }
 .restaurants--cards a {
   text-decoration: inherit;
   color: black;
-  position: relative;
 }
 .restaurants--cards .new {
   position: absolute;
   z-index: 2;
   background-color: #99E2D0;
   color: #278870;
-  margin-top: 4%;
+  top: 4%;
   right: 15px;
   padding: 8px 12px;
   border-radius: 2px;
@@ -182,7 +188,7 @@ header {
   }
 
   .btn {
-    width: 30%;
+    width: 340px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -192,7 +198,6 @@ header {
 
   .btn {
     box-sizing: border-box;
-    width: 30%;
   }
 
   footer h4 {

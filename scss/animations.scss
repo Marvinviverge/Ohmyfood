@@ -1,7 +1,41 @@
 #explorer--btn{
     transition-duration: 0.25s;
-}
 
-#explorer--btn:hover{
+    &:hover{
         box-shadow: 0px 0px 10px #494949;
     }
+}
+
+.restaurants--cards{
+    transition-duration: 0.25s;
+    &:hover{
+        box-shadow: 0px 0px 15px #494949;
+    }
+
+    &--body{
+        & i:hover{
+            background-image: linear-gradient(#FF79DA, #9356DC);
+            background-clip: text;
+            scale: 1.08;
+        }
+    }
+}
+
+#menu--btn{
+    transition-duration: 0.25s;
+    &:hover{
+        box-shadow: 0px 0px 15px #494949;
+    }
+}
+
+.menu--plats--body{
+    &:hover .check{
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    }
+    &:hover i {
+        transform: rotate(720deg);
+        transition-duration: 0.6s;
+    }
+}
