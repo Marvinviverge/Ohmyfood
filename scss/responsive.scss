@@ -1,0 +1,11 @@
+@media screen and (max-width:991px)
+{
+
+    & .restaurants--cards{
+        width:48%;
+    }
+    & #cards--position{
+        display:flex;
+        flex-flow: row wrap;
+    }
+}

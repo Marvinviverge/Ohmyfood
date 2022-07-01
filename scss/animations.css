@@ -1,0 +1,7 @@
+#explorer--btn {
+  transition-duration: 0.25s;
+}
+
+#explorer--btn:hover {
+  box-shadow: 0px 0px 10px #494949;
+}/*# sourceMappingURL=animations.css.map */

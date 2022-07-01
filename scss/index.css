@@ -1,15 +1,15 @@
 @import url("./footer.css");
 @import url("./style.css");
+@import url("./animations.css");
 header {
   text-align: center;
   box-shadow: 0px 3px 5px rgb(205, 205, 205);
   position: relative;
+  padding: 15px;
 }
 
 #logo {
-  padding: 20px;
-  width: 50%;
-  height: 50%;
+  width: 250px;
 }
 
 #location {
@@ -34,13 +34,14 @@ header {
 #explorer--btn {
   border-radius: 25px;
   padding: 15px;
-  width: 60%;
+  width: 250px;
   color: white;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   font-weight: bold;
   border: none;
   font-size: 15px;
-  box-shadow: 3px 7px 5px rgb(202, 202, 202);
+  box-shadow: 0px 0px 5px #494949;
+  cursor: pointer;
 }
 #explorer h1 {
   font-size: 30px;
@@ -72,6 +73,7 @@ header {
   height: 10px;
   text-align: center;
   font-size: 9px;
+  box-sizing: content-box;
 }
 .btn--functions {
   padding: 22px;
@@ -93,6 +95,8 @@ header {
 #restaurants {
   padding: 40px 20px;
   background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
 }
 #restaurants h2 {
   margin-bottom: 20px;
@@ -103,7 +107,9 @@ header {
   overflow: hidden;
   box-shadow: 3px 7px 5px rgb(222, 222, 222);
   height: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .restaurants--cards--img {
   -o-object-fit: cover;
@@ -124,6 +130,14 @@ header {
 .restaurants--cards--body .fa-regular {
   font-size: 25px;
   margin-top: 15px;
+  position: absolute;
+  right: 10%;
+}
+.restaurants--cards--body .fa-solid {
+  font-size: 25px;
+  margin-top: 15px;
+  position: absolute;
+  right: 10%;
 }
 .restaurants--cards a {
   text-decoration: inherit;
@@ -135,9 +149,57 @@ header {
   z-index: 2;
   background-color: #99E2D0;
   color: #278870;
-  bottom: 175px;
+  bottom: 90%;
   right: 15px;
   padding: 8px 12px;
   border-radius: 2px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants--cards {
+    width: 47%;
+  }
+
+  #cards--position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  #functions {
+    display: flex;
+    flex-direction: column;
+  }
+  #functions--position {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px 50px;
+  }
+
+  .btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants--cards {
+    width: 22%;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    width: 30%;
+  }
+
+  footer h4 {
+    margin-left: 30px;
+  }
+  footer ul {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 30px;
+  }
 }/*# sourceMappingURL=index.css.map */
