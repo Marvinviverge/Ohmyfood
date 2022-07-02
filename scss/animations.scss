@@ -28,14 +28,24 @@
     }
 }
 
-.menu--plats--body{
-    &:hover .check{
-    margin-right: 0;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    }
-    &:hover i {
+.menu{
+    &--plats--body{
+        &:hover .check{
+        margin-right: 0;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        }
+        &:hover i {
         transform: rotate(720deg);
         transition-duration: 0.6s;
+        }
+    }
+
+    &--title--icons{
+        & i:hover{
+            background-image: linear-gradient(#FF79DA, #9356DC);
+            background-clip: text;
+            scale: 1.08;
+        }
     }
 }

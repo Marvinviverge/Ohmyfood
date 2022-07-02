@@ -33,4 +33,10 @@
 .menu--plats--body:hover i {
   transform: rotate(720deg);
   transition-duration: 0.6s;
+}
+.menu--title--icons i:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  scale: 1.08;
 }/*# sourceMappingURL=animations.css.map */
