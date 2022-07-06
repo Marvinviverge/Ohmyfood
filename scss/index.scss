@@ -1,6 +1,48 @@
 @import url("./footer.css");
 @import url("./style.css");
 @import url("./animations.css");
+@import url("./keyframes.css");
+
+.wrap {
+    height: 100vh;
+    background-color: white;
+    z-index: 3;
+    position: fixed;
+    animation: disappear 3s forwards;
+    opacity: 0.8;
+    pointer-events: none;
+    inset:0;
+}
+
+.spinner-wrap {
+    position: relative;
+    margin:0 auto;
+    width:100px;
+    top:50%;
+}
+  
+.spinner {
+    height: 100px;
+    width: 100px;
+    inset:0;
+    margin:auto;
+    position:absolute;
+    transform-origin: center center;
+    animation: spin 1s steps(12, end) infinite;
+    
+    i {
+      height: 30px;
+      width: 6px;
+      margin-left: -3px;
+      display: block;
+      transition: height 1s;
+      position: absolute;
+      left: 50%;
+      transform-origin: center 50px;
+      background: black;
+      border-radius: 3px;
+    }
+}
 
 header{
     text-align: center;
@@ -208,6 +250,19 @@ header{
     .btn {
         width: 340px;
     }
+
+    footer{
+
+        & h4{
+            margin-left: 50px;
+        }
+        
+        & ul{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 50px;
+        }
+    }
 }
 
 @media screen and(min-width: 1024px){
@@ -217,17 +272,5 @@ header{
 
     .btn{
         box-sizing: border-box;
-    }
-    footer{
-
-        & h4{
-            margin-left: 30px;
-        }
-        
-        & ul{
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0px 30px;
-        }
     }
 }

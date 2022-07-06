@@ -1,6 +1,7 @@
 @import url("./footer.css");
 @import url("./style.css");
 @import url("./animations.css");
+@import url("./keyframes.css");
 
 
 header{
@@ -129,6 +130,13 @@ header{
         display:flex;
         justify-content: space-between;
         box-shadow: 3px 4px 5px rgb(222, 222, 222);
+        
+        animation: appear 1.5s;
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: 250ms * $i;
+            }
+        }
 
         &--content{
             display: flex;
@@ -173,4 +181,38 @@ header{
     margin-right: -150px;
     border-radius: 0 15px 15px 0;
     transition: margin-right 0.8s;
+}
+
+@media screen and(min-width: 992px){
+    .menu--position{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .menu--plats{
+        width:40%;
+        margin: 0 10px;
+    }
+    #menu--btn{
+        margin-top: 40px;
+    }
+
+    #menu--title{
+        justify-content: center;
+    }
+    
+    footer{
+
+        & h4{
+            margin-left: 50px;
+        }
+        
+        & ul{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 50px;
+        }
+    }
 }
