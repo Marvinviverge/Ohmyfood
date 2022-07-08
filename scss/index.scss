@@ -1,7 +1,11 @@
-@import url("./footer.css");
 @import url("./style.css");
+@import url("./footer.css");
 @import url("./animations.css");
 @import url("./keyframes.css");
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 
 .wrap {
     height: 100vh;
@@ -112,7 +116,7 @@ header{
     align-items: center;
 
     &--number{
-        background-color: #9356DC;
+        background-color: $color-primary;
         padding: 6px;
         border-radius: 100%;
         position:absolute;
@@ -205,15 +209,14 @@ header{
     }
 
     & a{
-        text-decoration: inherit;
         color:black;
     }
 
     & .new{
         position:absolute;
         z-index: 2;
-        background-color: #99E2D0;
-        color: darken($color: #99E2D0, $amount: 40%);
+        background-color: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 40%);
         top: 4%;
         right: 15px;
         padding: 8px 12px;
