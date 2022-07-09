@@ -29,3 +29,18 @@ footer{
         width: 25px;
     }
 }
+
+@media screen and(min-width: 768px){
+    footer{
+
+        & h4{
+            margin-left: 50px;
+        }
+        
+        & ul{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 50px;
+        }
+    }
+}

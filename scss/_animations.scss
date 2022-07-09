@@ -1,3 +1,28 @@
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+@keyframes disappear {
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .spinner i:nth-child(1) { opacity:.08 }
 .spinner i:nth-child(2) { transform:rotate(30deg);opacity:.167 }
@@ -16,21 +41,19 @@
     transition-duration: 0.25s;
 
     &:hover{
-        box-shadow: 0px 0px 15px #494949;
+        @include shadow-hover;
     }
 }
 
 .restaurants--cards{
     transition-duration: 0.25s;
     &:hover{
-        box-shadow: 0px 0px 15px #494949;
+        @include shadow-hover;
     }
 
     &--body{
         & i:hover{
-            background-image: linear-gradient(#FF79DA, #9356DC);
-            background-clip: text;
-            scale: 1.08;
+            @include heart-hover;
         }
     }
 }
@@ -38,7 +61,7 @@
 #menu--btn{
     transition-duration: 0.25s;
     &:hover{
-        box-shadow: 0px 0px 15px #494949;
+        @include shadow-hover;
     }
 }
 
@@ -57,9 +80,7 @@
 
     &--title--icons{
         & i:hover{
-            background-image: linear-gradient(#FF79DA, #9356DC);
-            background-clip: text;
-            scale: 1.08;
+            @include heart-hover;
         }
     }
 }

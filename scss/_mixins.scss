@@ -1,0 +1,50 @@
+@mixin button{
+    border-radius: 25px;
+    padding:15px;
+    width:250px;
+    color:white;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px #494949;
+    cursor:pointer;
+}
+
+@mixin menu-heart{
+    font-size: 30px;
+    top: 25%;
+    position:absolute;
+    right:10%;
+    background-color: transparent;
+    border:none;
+}
+
+@mixin index-heart{
+    font-size: 25px;
+    margin-top: 20px;
+    position:absolute;
+    right:4%;
+    background-color: transparent;
+    border:none;
+}
+
+@mixin heart-hover{
+    background-image: linear-gradient($color-secondary, $color-primary);
+    background-clip: text;
+    transform: scale(1.08);
+}
+
+@mixin ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin shadow{
+    box-shadow: 0px 0px 5px #494949;
+}
+
+@mixin shadow-hover{
+    box-shadow: 0px 0px 15px #494949;
+}

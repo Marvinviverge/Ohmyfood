@@ -1,6 +1,6 @@
-@import url(./scss/style.scss);
-@import url(./scss/keyframes.scss);
-@import url(./scss/index.scss);
-@import url(./scss/menu.scss);
-@import url(./scss/footer.scss);
-@import url(./scss/animations.scss);
+@import "./scss/mixins";
+@import "./scss/style.scss";
+@import "./scss/animations.scss";
+@import "./scss/index.scss";
+@import "./scss/menu.scss";
+@import "./scss/footer.scss";
