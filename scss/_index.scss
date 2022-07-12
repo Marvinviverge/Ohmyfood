@@ -122,6 +122,14 @@ header{
         font-weight: bold;
         box-shadow: 3px 7px 5px rgb(222, 222, 222);
         background-color: rgb(245, 245, 245);
+
+        &--store{
+            background-color: lighten($color: $color-primary, $amount: 35%);
+
+            & .fa-solid{
+                color: $color-primary;
+            }
+        }
     }
 
     & .fa-solid{

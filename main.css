@@ -294,6 +294,12 @@ header {
   box-shadow: 3px 7px 5px rgb(222, 222, 222);
   background-color: rgb(245, 245, 245);
 }
+.btn--functions--store {
+  background-color: #f2eafb;
+}
+.btn--functions--store .fa-solid {
+  color: #9356DC;
+}
 .btn .fa-solid {
   margin: 0 30px 0 10px;
   font-size: 20px;
@@ -372,7 +378,6 @@ header {
   .restaurants--cards {
     width: 47%;
   }
-
   #cards--position {
     display: flex;
     flex-direction: row;
@@ -380,7 +385,6 @@ header {
     gap: 30px;
     justify-content: space-between;
   }
-
   #functions {
     display: flex;
     flex-direction: column;
@@ -391,7 +395,6 @@ header {
     flex-wrap: wrap;
     gap: 0px 50px;
   }
-
   .btn {
     width: 340px;
   }
@@ -400,7 +403,6 @@ header {
   .restaurants--cards {
     width: 22%;
   }
-
   .btn {
     box-sizing: border-box;
   }
@@ -519,22 +521,24 @@ header #logo {
   box-shadow: 3px 4px 5px rgb(222, 222, 222);
   -webkit-animation: appear 1.5s;
           animation: appear 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .menu--plats--body:nth-child(1) {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .menu--plats--body:nth-child(2) {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .menu--plats--body:nth-child(3) {
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .menu--plats--body:nth-child(4) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 .menu--plats--body--content {
   display: flex;
@@ -581,16 +585,13 @@ header #logo {
     justify-content: center;
     gap: 20px;
   }
-
   .menu--plats {
     width: 40%;
     margin: 0 10px;
   }
-
   #menu--btn {
     margin-top: 40px;
   }
-
   #menu--title {
     justify-content: center;
   }
