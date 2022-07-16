@@ -12,18 +12,6 @@
     }
 }
 
-@keyframes appear {
-    0% {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .spinner i:nth-child(1) { opacity:.08 }
 .spinner i:nth-child(2) { transform:rotate(30deg);opacity:.167 }
 .spinner i:nth-child(3) { transform:rotate(60deg);opacity:.25 }
@@ -36,6 +24,18 @@
 .spinner i:nth-child(10) { transform:rotate(270deg);opacity:.833 }
 .spinner i:nth-child(11) { transform:rotate(300deg);opacity:.9167 }
 .spinner i:nth-child(12) { transform:rotate(330deg);opacity:1 }
+
+@keyframes appear {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 #explorer--btn{
     transition-duration: 0.25s;

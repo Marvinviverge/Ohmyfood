@@ -1,3 +1,5 @@
+    /* Header + Logo */
+
 header{
     display:flex;
     align-items: center;
@@ -17,6 +19,8 @@ header{
     }
 }
 
+    /* Image de fond */
+
 #background {
     position:relative;
 
@@ -28,6 +32,8 @@ header{
         object-fit: cover;
     }
 }
+
+    /* Menu */
 
 #menu{
     background-color: rgb(245, 245, 245);
@@ -146,6 +152,8 @@ header{
     border-radius: 0 15px 15px 0;
     transition: margin-right 0.8s;
 }
+
+/* Responsive */
 
 @media screen and(min-width: 992px){
     .menu--position{
